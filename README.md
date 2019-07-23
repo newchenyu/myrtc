@@ -6,7 +6,8 @@ myrtc是一个小型的视频会议系统，通过对接七牛的音视频互动
 + 关闭/打开屏幕共享
 + 双击全屏远端摄像头
 + 双击全屏远端共享的屏幕
-(https://dcloud.dwion.com/chenyu/login_blank.jpg)
-(https://dcloud.dwion.com/chenyu/login_room.jpg)
-(https://dcloud.dwion.com/chenyu/one_p.jpg)
-(https://dcloud.dwion.com/chenyu/more_p.jpg)
+
+![登录](https://dcloud.dwion.com/chenyu/login_blank.jpg)
+![登录1](https://dcloud.dwion.com/chenyu/login_room.jpg)
+![本地](https://dcloud.dwion.com/chenyu/one_p.jpg)
+![多人](https://dcloud.dwion.com/chenyu/more_p.jpg)
