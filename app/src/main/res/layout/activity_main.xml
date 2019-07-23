@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    tools:context="com.chenyu.rtc.activity.MainActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/login_kuang_top"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent=".35">
+
+        <TextView
+            android:id="@+id/text_join_meeting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="加入会议"
+            android:textColor="#ffffff"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toTopOf="@id/login_kuang"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/login_kuang"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/login_kuang"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent=".7"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_join_meeting"
+            app:layout_constraintVertical_bias="1.0">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="#ffffff"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent=".85"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent=".9">
+
+
+                <EditText
+                    android:id="@+id/edit_room_num"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/bg_edittext"
+                    android:hint="请输入会议号"
+                    android:paddingLeft="40dp"
+                    app:layout_constraintBottom_toTopOf="@id/edit_user_name"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintWidth_percent=".8" />
+
+                <ImageView
+                    android:id="@+id/image_room_num"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/login_room_num"
+                    app:layout_constraintBottom_toBottomOf="@id/edit_room_num"
+                    app:layout_constraintEnd_toStartOf="@id/image_login_line"
+                    app:layout_constraintStart_toStartOf="@id/edit_room_num"
+                    app:layout_constraintTop_toTopOf="@id/edit_room_num" />
+
+                <ImageView
+                    android:id="@+id/image_login_line"
+                    android:layout_width="1dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/login_line"
+                    app:layout_constraintBottom_toBottomOf="@id/edit_room_num"
+                    app:layout_constraintStart_toEndOf="@id/image_room_num"
+                    app:layout_constraintTop_toTopOf="@id/edit_room_num" />
+
+                <EditText
+                    android:id="@+id/edit_user_name"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/bg_edittext"
+                    android:hint="请输入昵称"
+                    android:paddingLeft="40dp"
+                    app:layout_constraintBottom_toTopOf="@id/meeting"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/edit_room_num"
+                    app:layout_constraintWidth_percent=".8" />
+
+                <ImageView
+                    android:id="@+id/image_user_name"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/login_user"
+                    app:layout_constraintBottom_toBottomOf="@id/edit_user_name"
+                    app:layout_constraintEnd_toStartOf="@id/image_login_line1"
+                    app:layout_constraintStart_toStartOf="@id/edit_user_name"
+                    app:layout_constraintTop_toTopOf="@id/edit_user_name" />
+
+                <ImageView
+                    android:id="@+id/image_login_line1"
+                    android:layout_width="1dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/login_line"
+                    app:layout_constraintBottom_toBottomOf="@id/image_user_name"
+                    app:layout_constraintStart_toEndOf="@id/image_user_name"
+                    app:layout_constraintTop_toTopOf="@id/image_user_name" />
+
+                <Button
+                    android:id="@+id/meeting"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:background="#4680c5"
+                    android:text="加入会议"
+                    android:textColor="#ffffff"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/edit_user_name"
+                    app:layout_constraintWidth_percent=".8" />
+            </android.support.constraint.ConstraintLayout>
+
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>
